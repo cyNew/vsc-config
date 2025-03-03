@@ -1,0 +1,83 @@
+{
+    "window.autoDetectColorScheme": true,
+    "window.confirmBeforeClose": "keyboardOnly",
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "auto",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "window.commandCenter": false,
+    // workbench
+    "workbench.view.alwaysShowHeaderActions": false,
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    // 工作区图标
+    "workbench.productIconTheme": "fluent-icons",
+    // 浅色主题
+    "workbench.preferredLightColorTheme": "Espresso Soda",
+    // 深色主题
+    "workbench.preferredDarkColorTheme": "Dracula Theme",
+    // editor cursor
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorWidth": 3,
+    // editor
+    "editor.fontSize": 16,
+    "editor.tabSize": 4,
+    "editor.tabCompletion": "on",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.fontFamily": "'Intel One Mono', 'LXGW WenKai', monospace",
+    "editor.renderWhitespace": "selection",
+    "editor.minimap.autohide": false,
+    // 定制语法高亮颜色
+    "editor.semanticTokenColorCustomizations": {
+        "[Atom One Light], [Espresso Soda], [Moegi Light Vitesse], [Quiet Light], [Vitesse Light], [Solarized Light]": {
+            "rules": {
+                "property": "#000",
+            }
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Atom One Light], [Espresso Soda], [Moegi Light Vitesse], [Quiet Light], [Vitesse Light], [Solarized Light]": {
+            "textMateRules": [
+                {
+                    "scope": "variable",
+                    "settings": {
+                        "foreground": "#000",
+                        "fontStyle": "bold"
+                    },
+                },
+                {
+                    "scope": "variable.other",
+                    "settings": {
+                        "foreground": "#000"
+                    }
+                }
+            ]
+        }
+    },
+    // 自动折叠 import 区块
+    "editor.foldingImportsByDefault": false,
+    // 终端配置
+    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', monospace",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.inheritEnv": true,
+    "terminal.integrated.macOptionIsMeta": true,
+    "terminal.external.osxExec": "Warp.app",
+    // files
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "**/.idea": false,
+        "**/.fleet": false,
+        "**/.vscode": false,
+    },
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    //
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
+}
